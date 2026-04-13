@@ -477,6 +477,10 @@ p{
 
 .p-title.portfolio{
     margin-bottom: 8px;
+     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .p-title.team,
@@ -536,7 +540,6 @@ p{
     border-radius: 4px;
     width: 264px;
     height: 40px;
-    margin-top: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     font-weight: 400;
     font-size: 12px;
@@ -758,14 +761,6 @@ p{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/**.form-input:focus {
-    border-color: #4D5AE5;
-}
-
-.input-wrap:focus-within .icon-social.form {
-    fill: #4D5AE5;
-}**/
-
 .input-textarea {
     resize: none;
     padding: 8px 16px;
@@ -778,10 +773,6 @@ p{
     font-size: 12px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/**.input-textarea:focus {
-    border-color: #4D5AE5;
-}**/
 
 .div-policy {
     margin-bottom: 24px;
@@ -861,26 +852,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     background-color: #404BBF;
 }
 
-@media (max-width: 320px){
-    .container.header{
-        gap:149px;
-        justify-content: center;
-    }
-
-    .portfolio-item{
-        width: 288px;
-        height: 400px;
-    }
-
-    .p-title.portfolio{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    }
-}
-
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
 
     .container{
         max-width: 768px;
@@ -1063,11 +1035,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         gap:24px;
     } 
 
-    .modal-overlay{
-        opacity: 0;
-        pointer-events: none;
-    }
-
     .modal {
         margin-top: 96px;
         width: 408px;
@@ -1079,25 +1046,29 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 }
 
-@media (min-width:1440px){
+@media screen and (min-width:1158px){
+
     .container{
-    max-width: 1128px; 
-}
+        max-width: 1158px; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-.home-link.header{
-    padding: 24px 0;
-}
+    .home-link.header{
+        padding: 24px 0;
+    }
 
-.container.header{    gap:0;
-}
+    .container.header{    
+        gap:0;
+    }
 
-.div-menu{
-    padding: 16px 16px 16px 0;
-}
+    .div-menu{
+       padding: 16px 16px 16px 0;
+    }
 
-.nav{
-    margin-left:76px;
-}
+    .nav{
+        margin-left:76px;
+    }
 
     .address{
        margin-left:332px;
@@ -1148,9 +1119,9 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
 
     .p-title.features{
         font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
     }
 
     .container.features{
@@ -1196,20 +1167,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
 
     .portfolio-item .img-box{
         width: 360px;
-    }
-
-    .container.footer{
-        align-items: start;
-        justify-content: start;
-        flex-direction: row;
-        gap:24px;
-        row-gap:72px;
-        padding:0 0;
-        flex-wrap: wrap;
-    }
-
-    .page-footer{
-        padding: 96px 164px 96px 108px;
     }
 
     .subscribe{
@@ -1264,13 +1221,23 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         max-width: 336px;
     }
 
+    .container.features{
+        padding: 0 15px;
+    }
+
+    .container.portfolio{
+        padding: 0 15px;
+    }
+
     .container.footer{
         gap:0;
         row-gap:0;
+        flex-wrap: nowrap;
+        padding: 0 15px;
     }
 
     .page-footer{
-        padding: 100px 159px 100px 156px;
+        padding: 100px 0 100px 0;
     }
 
     .div-media-footer{
@@ -1309,11 +1276,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         gap:24px;
     } 
 
-    .modal-overlay{
-        opacity: 0;
-        pointer-events: none;
-    }
-
     .modal {
         margin-top: 96px;
         width: 408px;
@@ -1325,29 +1287,15 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .form-input:focus {
-    border-color: #4D5AE5;
-}
+        border-color: #4D5AE5;
+    }
 
-.input-wrap:focus-within .icon-social.form {
-    fill: #4D5AE5;
-}
-
-.input-textarea {
-    resize: none;
-    padding: 8px 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    outline: none;
-    width: 100%; 
-    height: 120px;
-    background-color: transparent;
-    font-size: 12px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+    .input-wrap:focus-within .icon-social.form {
+        fill: #4D5AE5;
+    }
     .input-textarea:focus {
-    border-color: #4D5AE5;
-}
+        border-color: #4D5AE5;
+    }
 }
 
 
