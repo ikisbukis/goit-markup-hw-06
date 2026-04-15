@@ -346,7 +346,7 @@ img{
 
 .features-item{
     flex-basis:288px;
-    max-height: 120px
+    max-height: 122px;
 }
 
 .features-item p{
@@ -362,8 +362,7 @@ img{
     border: 1px #8E8F99 solid;
     border-radius: 4px;
     height:112px;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
 .svg-item{
@@ -461,7 +460,7 @@ p{
 }
 
 .section-portfolio{
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .portfolio-list{
@@ -476,8 +475,7 @@ p{
 }
 
 .portfolio-item{
-    width: 288px;
-    height: 400px;
+    flex-basis: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -907,7 +905,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .address{
-        margin-left:122px;
+        margin-left:auto;
         display: block;
     }
     
@@ -961,12 +959,12 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         line-height: 1.11111;
         letter-spacing: 0.02em;
         text-align: start;
-        color: var(--navy-blue);
+        color: #2E2F42;
     }
 
     .features-item{
         flex-basis:356px;
-        max-height: 120px
+        min-height: auto;
     }
 
     .features-item p{
@@ -974,7 +972,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
        font-size: 16px;
        line-height: 1.5;
        letter-spacing: 0.02em;
-       color: var(--slate);
+       color: #434455;
     }
 
     .team-list{
@@ -993,8 +991,8 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .portfolio-item{
-        width: 356px;
-        height: 420px;
+        flex-basis: 356px;
+        min-height: auto;
     }
 
     .img-box{
@@ -1004,7 +1002,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
 
     .container.portfolio{
         margin: 0 auto;
-        padding: 0 0;
     }
 
     .container.footer{
@@ -1013,12 +1010,15 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         flex-direction: row;
         gap:24px;
         row-gap:72px;
-        padding:0 0;
         flex-wrap: wrap;
     }
 
     .page-footer{
         padding: 96px 164px 96px 108px;
+    }
+
+    .container.footer{
+        padding: 0 0;
     }
 
     .subscribe{
@@ -1095,7 +1095,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
 
     .container.header{    
         gap:0;
-        padding: 0;
     }
 
     .div-menu{
@@ -1107,7 +1106,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .address{
-       margin-left:332px;
+       margin-left:auto;
     }
 
     .page-nav,
@@ -1149,8 +1148,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     .svg-container{
         position: relative;
         height:112px;
-        opacity: 1;
-        pointer-events: auto;
+        display: block;
     }
 
     .p-title.features{
@@ -1160,13 +1158,9 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         letter-spacing: 0.02em;
     }
 
-    .container.features{
-        padding: 0 0;
-    }
-
     .features-item{
         flex-basis:264px;
-        max-height: 224px
+        min-height: 224px;
     }
 
     .features-item p{
@@ -1254,19 +1248,10 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         max-width: 336px;
     }
 
-    .container.features{
-        padding: 0 15px;
-    }
-
-    .container.portfolio{
-        padding: 0 15px;
-    }
-
     .container.footer{
         gap:0;
         row-gap:0;
         flex-wrap: nowrap;
-        padding: 0 15px;
     }
 
     .page-footer{
