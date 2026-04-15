@@ -49,6 +49,7 @@ img{
     display: flex;
     gap:149px;
     justify-content: center;
+    align-items: center;
 }
 
 .container.header .nav{
@@ -56,12 +57,18 @@ img{
 }
 
 .div-menu{
-    padding: 16px 16px 16px 0;
 }
 
 .menu-open-btn{
     border: none;
     background-color: transparent;
+    padding: 0;
+    height: 24px;
+    padding: 16px 16px 16px 0;
+}
+
+.menu-open-btn:hover{
+    cursor: pointer;
 }
 
 .nav{
@@ -742,6 +749,13 @@ p{
     margin-bottom: 8px;
 }
 
+.portfolio-item {
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 
+                0 1px 1px rgba(46, 47, 66, 0.16), 
+                0 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .label-form {
     display: block;
     font-size: 12px;
@@ -876,6 +890,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
 
     .container.header{
         align-items: center;
+        justify-content: flex-start;
         gap:0px;
     }
 
@@ -884,10 +899,14 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .nav{
-        margin-left:120px;
+        margin-left:auto;
         position: static;
         opacity: 1;
         pointer-events: auto;
+    }
+
+    .header-overlay {
+        display: none !important;
     }
 
     .page-nav{
@@ -916,9 +935,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .div-menu{
-        position: fixed;
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 
     .title-section{
@@ -1060,6 +1077,11 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     .form-lable-text {
         max-width: 336px;
     }
+
+    .form-modal {
+        padding-left: 24px;
+        padding-right: 24px; 
+    }
 }
 
 @media screen and (min-width:1158px){
@@ -1194,6 +1216,16 @@ letter-spacing: 0.02em;
     .subscribe{
         flex-direction: row;
         gap:24px;
+    }
+
+    .portfolio-item {
+        box-shadow: none; 
+    }
+
+    .portfolio-item:hover {
+        box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 
+                    0 1px 1px rgba(46, 47, 66, 0.16), 
+                    0 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .subscribe-container{
