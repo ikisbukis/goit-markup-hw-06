@@ -48,7 +48,6 @@ img{
 .container.header{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .container.header .nav{
@@ -96,7 +95,7 @@ img{
 }
 
 .home-link.header{
-    padding: 16px  0px 16px 16px;
+    padding: 16px  0;
 }
 
 .home-link{
@@ -474,12 +473,10 @@ p{
 
 .portfolio-item{
     flex-basis: 288px;
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 
+                0 1px 1px rgba(46, 47, 66, 0.16), 
+                0 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus{
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-content{
@@ -997,10 +994,6 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         height: 300px;
     }
 
-    .container.portfolio{
-        margin: 0 auto;
-    }
-
     .container.footer{
         align-items: start;
         justify-content: start;
@@ -1011,9 +1004,8 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .page-footer{
-        padding: 96px 164px 96px 108px;
+        padding: 96px 0;
     }
-
 
     .subscribe{
         flex-direction: row;
@@ -1194,7 +1186,8 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
         box-shadow: none; 
     }
 
-    .portfolio-item:hover {
+    .portfolio-item:hover,
+    .portfolio-item:focus {
         box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 
                     0 1px 1px rgba(46, 47, 66, 0.16), 
                     0 2px 1px rgba(46, 47, 66, 0.08);
