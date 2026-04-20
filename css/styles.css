@@ -152,6 +152,8 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .link-modal{
@@ -167,7 +169,7 @@ img{
 .nav-modal{
     margin-top:72px;
     margin-left:16px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
 }
 
 .page-nav-modal{
@@ -422,7 +424,7 @@ p{
 
 .section-team{
     background-color: #F4F4Fd;
-    padding: 96px 28px;
+    padding: 96px 0;
 }
 
 .img-box{
@@ -502,7 +504,7 @@ p{
 .page-footer{
     background-color:#2E2F42;
     color:#F4F4Fd;
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .social-link{
@@ -883,7 +885,7 @@ input[type="checkbox"]:checked + .policy .custom-checkbox .icon-check {
     }
 
     .home-link.header{
-        padding: 24px  0px 24px 16px;
+        padding: 24px  0px;
     }
 
     .nav{
